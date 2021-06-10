@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hito 2º Trimestre</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div id="contenido">
+	<p><form action="alquiler.php" method="get">
+		
+		<fieldset>
+		<legend>Características de la vivienda</legend>
+		
+		<p>
+		<label for="opinion">Seleccione la zona que mas le guste:</label>
+		<select id="lugar" onchange="FotoVivienda()">
+   			<option value="23">Ciudad Lineal</option>
+   			<option value="25">Hortaleza</option>
+   			<option value="30">Retiro</option>
+   			<option value="20">San Blas</option>
+		</select><br />
+		</p>
+		<img id="imagen" src="imagenes/23.jpg">
+		<p id="alquilerpiso">¿De que tamaño quiere la vivienda?<br>
+    		<input type="radio" name="tipo" value="1dormitorio50metros" checked="" id="50metros">1 dormitorio 50 metros<br>
+    		<input type="radio" name="tipo" value="1dormitorio50metros" id="70metros">2 dormitorios 70 metros<br>
+    		<input type="radio" name="tipo" value="1dormitorio50metros" id="100metros">3 dormitorios 100 metros
+  		</p>
+		<p id=mejora>
+    		Selecciona tus intereses:<br>
+    		<input type="checkbox" name="calefaccion" id="mejora1"> Calefacción<br>
+    		<input type="checkbox" name="aire" id="mejora2"> Aire acondicionado<br>
+    		<input type="checkbox" name="hidromasaje" id="mejora3"> Bañera hidromasaje
+  		</p>
+  		<input type="button" value="Calcular precio" onclick="PrecioMetroCuadrado()"><br><br>
+		<input type="submit" value="Enviar">
+
+
+	</fieldset>
+	</form>
+	</p>
+	<div id="parrafos">
+	<p id="vivienda"></p>
+	<p id="alquiler"></p>
+	<p id="aumento"></p>
+	<p id="total"></p>
+	</div>
+</div>
+</body>
+</html>
+

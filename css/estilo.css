@@ -1,0 +1,37 @@
+body{
+	margin: 0;
+}
+
+#contenido{
+	position: absolute;
+	width: 96%;
+	height: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-color: lightyellow;
+}
+
+fieldset {
+	background-color: lightblue;
+	border-radius: 10px;
+	width: 66%;
+}
+
+legend {
+	background-color: lightblue;
+	border-radius: 10px;
+	border-style: solid;
+	width: 30%;
+}
+
+#imagen {
+	padding-left: 60%;
+	float: right;
+}
+
+#parrafos {
+	background-color: lightblue;
+	width: 320px;
+}
